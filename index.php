@@ -105,14 +105,24 @@
 
 		.webCard{
 			width: 20rem;
-			background-color: green;
+			border: 2px solid black;
 			margin: 1em;
+			-webkit-transition: all 0.2s ease;
+			-moz-transition: 	all 0.2s ease;
+			-ms-transition: 	all 0.2s ease;
+			-o-transition: 		all 0.2s ease;
+			transition: 		all 0.2s ease;
+		}
+
+		.webCard:hover{
+			background-color: #39e47e;
 		}
 
 		.webCard p{
 			font-size: 2em;
 			text-align: center;
 			padding: 1em 0;
+			margin: 0;
 		}
 
 		/* Animation */
@@ -130,6 +140,16 @@
 		/* Media query */
 
 		@media only screen and (max-width: 575.98px) {
+
+			.webGallery{
+				display: flex;
+				justify-content: center;
+			}			
+
+			.webCard{
+				margin: 1em 0;
+			}
+
 			.typewriter h1{
 				font-size: 3em;
 			}
